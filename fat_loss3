@@ -1,0 +1,33 @@
+def total_macros_per_day_user(weight,metabolism):
+   
+  Protein =(1.0)*(weight)
+  Fat =(0.50)*(weight)
+  
+   
+  if (metabolism) == 1:
+   Carbs = (.50)*weight
+   Calories = (Carbs*4) + (Protein*4) + (Fat*9)
+   
+  elif (metabolism) == 2: 
+   Carbs = (.65)*weight
+   Calories = (Carbs*4) + (Protein*4) + (Fat*9)
+   
+  elif (metabolism) == 3: 
+   Carbs = (.75)*weight
+   Calories = (Carbs*4) + (Protein*4) + (Fat*9)
+ 
+  
+  total_macros = 'You should eat ' +str(int(Calories))+ ' calories, ' +str(int(Carbs))+ ' carbs, ' +str(int(Protein))+ ' protein and ' +str(int(Fat))+ ' fat per day to lose weight in with your customized fat loss plan!'  
+  print(total_macros)  
+
+
+
+
+
+total_macros_per_day_user(150,2)
+
+
+
+
+
+#Note to USER - call this function and for "Metabolism" enter "1" for "slow", "2" for "average" or "3" for fast. 
